@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    overflow-y: hidden;
+}
+
+.container {
+    margin: auto;
+    background: cornsilk;
+}
+
+.title {
+    text-align: center;
+    height: 5vh;
+    padding-top: 1.2rem;
+}
+
+.btn {
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+}
+
+.button {
+    width: 50%;
+    padding: 0 2rem;
+    flex: 5;
+}
+
+#budget {
+    border-left: black solid;
+    border-right: black solid;
+    font-size: 0.8rem;
+    text-align: center;
+    flex: 1;
+}
+
+.budget a {
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.btn i{
+    color: orange;
+    font-size: 2rem;
+}
+
+.btn div {
+    width: 45%;
+}
+
+.button:last-child a{
+    float: right;
+}
+
+#displayDate {
+    height: 8vh;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.7rem;
+}
+
+#pieChart {
+    height: 50vh;
+    padding: 2rem 5rem;
+}
+
+.progressBar {
+    margin-top: 8rem;
+    width: 450px;
+    height: 50px;
+    border-radius: 1.5rem;
+    background: #f3e2cb;
+}
+
+#progress {
+    float: left;
+    background: rgb(165, 241, 51);
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+#spendings {
+    height: 50vh;
+    padding: 2rem 5rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+.clearAll i {
+    float: right;
+    color: black;
+}
+
+.totalSpending {
+    height: 10vh;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-top: 1rem;
+}
+
+#goal {
+    border: solid black;
+    width: 30vw;
+}
+
+.sumAll {
+    padding-top: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .title {
+        font-size: 13px;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    .button:last-child a {
+        float: none;
+    }
+
+    .button a{
+        justify-content: center;
+        display: inline-block
+    }
+
+    .button i {
+        font-size: 1.6rem;
+    }
+
+    #displayDate {
+        font-size: 1.2rem;
+    }
+
+    .totalSpending {
+        font-size:  0.8rem;
+    }
+
+    .spendings {
+        padding: 1rem 2rem;
+    }
+
+    #budget {
+        flex: 3;
+        padding: 0 0.5rem;
+    }
+
+    #goal {
+        width: 40vw;
+    }
+
+    .progressBar {
+        margin-top: 8rem;
+        width: 300px;
+        height: 30px;
+    }
+
+    #progress {
+        font-size: 1.5rem;
+        width: 100%;
+        height: 100%;
+    }
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Money Talk</title>
+</head>
+<body onLoad="renderMonth(); loadStorage(); sumAll(); deleteItem();">
+    <main>
+        <div class="title"><h3>Money Talk</h3></div>
+        <div class="container">
+            <nav>
+                <div class="btn">
+                    <div class="button">
+                        <a href="index.html"><i class="fas fa-arrow-circle-left"></i></a>
+                    </div>
+                    <div id="budget" title="Click me to view current budget">Budget</div>
+                    <div class="button">
+                            <a href="" title="Add new spending" onclick="storeData(); return false;"><i class="fas fa-plus-circle"></i></a>
+                        </div>
+                </div>
+            </nav>
+            <div id="displayDate"></div>
+            <div id="spendings">
+                <div class="clearAll" title="Reset all"><a href="" onclick="deleteAll()"><i class="fas fa-trash"></i></a></div>
+            </div>
+            <div class="totalSpending">
+                    <div id="goal">Click to set budget</div>
+                <div class="sumAll"></div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
